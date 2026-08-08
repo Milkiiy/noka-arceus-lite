@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noka Arceus Lite - APK Downloads</title>
-    <meta name="description" content="Download Noka Arceus Lite [FREE] APK - All versions available.">
+    <meta name="description" content="Download Noka Arceus Lite APK and Termux - All versions available.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -38,7 +38,6 @@
             overflow-x: hidden;
         }
 
-        /* Animated background */
         .bg-grid {
             position: fixed;
             inset: 0;
@@ -72,7 +71,6 @@
             padding: 40px 20px;
         }
 
-        /* Header */
         .header {
             text-align: center;
             margin-bottom: 50px;
@@ -127,7 +125,6 @@
             line-height: 1.6;
         }
 
-        /* Stats bar */
         .stats {
             display: flex;
             justify-content: center;
@@ -154,7 +151,25 @@
             margin-top: 2px;
         }
 
-        /* APK cards */
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
+
         .apk-list {
             display: flex;
             flex-direction: column;
@@ -181,6 +196,11 @@
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(108, 92, 231, 0.1);
         }
 
+        .apk-card.termux:hover {
+            border-color: rgba(0, 206, 201, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 206, 201, 0.15);
+        }
+
         .apk-info {
             display: flex;
             align-items: center;
@@ -199,6 +219,10 @@
             justify-content: center;
             flex-shrink: 0;
             font-size: 1.2rem;
+        }
+
+        .apk-icon.termux {
+            background: linear-gradient(135deg, #00cec9, #0984e3);
         }
 
         .apk-details {
@@ -246,6 +270,10 @@
             cursor: pointer;
         }
 
+        .download-btn.termux {
+            background: linear-gradient(135deg, #00cec9, #0984e3);
+        }
+
         .download-btn:hover {
             transform: scale(1.05);
             box-shadow: 0 4px 20px var(--accent-glow);
@@ -260,7 +288,6 @@
             height: 16px;
         }
 
-        /* API Section */
         .api-section {
             margin-top: 50px;
             padding: 28px;
@@ -316,7 +343,6 @@
             color: var(--text-primary);
         }
 
-        /* Footer */
         .footer {
             text-align: center;
             margin-top: 50px;
@@ -336,7 +362,10 @@
             text-decoration: underline;
         }
 
-        /* Animations */
+        .spacer {
+            height: 36px;
+        }
+
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -348,7 +377,6 @@
             }
         }
 
-        /* Responsive */
         @media (max-width: 640px) {
             .apk-card {
                 flex-direction: column;
@@ -374,18 +402,18 @@
         <header class="header">
             <div class="badge">
                 <span class="dot"></span>
-                Available Now
+                v2.0.0 — Updated
             </div>
             <h1>Noka Arceus Lite</h1>
-            <p>Download all versions of Noka Arceus Lite [FREE] APK. Fast, reliable, and hosted on GitHub.</p>
+            <p>Download all versions of Nokia APK and Termux. Fast, reliable, and hosted on GitHub.</p>
             <div class="stats">
                 <div class="stat-item">
-                    <div class="stat-value">6</div>
-                    <div class="stat-label">Versions</div>
+                    <div class="stat-value">7</div>
+                    <div class="stat-label">Files</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-value">~108 MB</div>
-                    <div class="stat-label">Per File</div>
+                    <div class="stat-value">~755 MB</div>
+                    <div class="stat-label">Total Size</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-value">FREE</div>
@@ -394,19 +422,20 @@
             </div>
         </header>
 
+        <div class="section-title">📦 Nokia APK</div>
         <section class="apk-list" id="downloads">
             <div class="apk-card">
                 <div class="apk-info">
                     <div class="apk-icon">📦</div>
                     <div class="apk-details">
-                        <div class="apk-name">Noka Arceus Lite [FREE] 1</div>
+                        <div class="apk-name">Nokia1</div>
                         <div class="apk-meta">
                             <span>📄 APK</span>
-                            <span>💾 107.71 MB</span>
+                            <span>💾 107.18 MB</span>
                         </div>
                     </div>
                 </div>
-                <a href="https://github.com/Milkiiy/noka-arceus-lite/releases/download/v1.0.0/Noka.Arceus.Lite.FREE.1.apk" class="download-btn" id="download-1">
+                <a href="https://github.com/Milkiiy/noka-arceus-lite/releases/download/v2.0.0/Nokia1.apk" class="download-btn" id="download-1">
                     <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                     Download
                 </a>
@@ -416,14 +445,14 @@
                 <div class="apk-info">
                     <div class="apk-icon">📦</div>
                     <div class="apk-details">
-                        <div class="apk-name">Noka Arceus Lite [FREE] 2</div>
+                        <div class="apk-name">Nokia2</div>
                         <div class="apk-meta">
                             <span>📄 APK</span>
-                            <span>💾 107.73 MB</span>
+                            <span>💾 107.18 MB</span>
                         </div>
                     </div>
                 </div>
-                <a href="https://github.com/Milkiiy/noka-arceus-lite/releases/download/v1.0.0/Noka.Arceus.Lite.FREE.2.apk" class="download-btn" id="download-2">
+                <a href="https://github.com/Milkiiy/noka-arceus-lite/releases/download/v2.0.0/Nokia2.apk" class="download-btn" id="download-2">
                     <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                     Download
                 </a>
@@ -433,14 +462,14 @@
                 <div class="apk-info">
                     <div class="apk-icon">📦</div>
                     <div class="apk-details">
-                        <div class="apk-name">Noka Arceus Lite [FREE] 3</div>
+                        <div class="apk-name">Nokia3</div>
                         <div class="apk-meta">
                             <span>📄 APK</span>
-                            <span>💾 107.72 MB</span>
+                            <span>💾 107.18 MB</span>
                         </div>
                     </div>
                 </div>
-                <a href="https://github.com/Milkiiy/noka-arceus-lite/releases/download/v1.0.0/Noka.Arceus.Lite.FREE.3.apk" class="download-btn" id="download-3">
+                <a href="https://github.com/Milkiiy/noka-arceus-lite/releases/download/v2.0.0/Nokia3.apk" class="download-btn" id="download-3">
                     <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                     Download
                 </a>
@@ -450,14 +479,14 @@
                 <div class="apk-info">
                     <div class="apk-icon">📦</div>
                     <div class="apk-details">
-                        <div class="apk-name">Noka Arceus Lite [FREE] 4</div>
+                        <div class="apk-name">Nokia4</div>
                         <div class="apk-meta">
                             <span>📄 APK</span>
-                            <span>💾 107.72 MB</span>
+                            <span>💾 107.18 MB</span>
                         </div>
                     </div>
                 </div>
-                <a href="https://github.com/Milkiiy/noka-arceus-lite/releases/download/v1.0.0/Noka.Arceus.Lite.FREE.4.apk" class="download-btn" id="download-4">
+                <a href="https://github.com/Milkiiy/noka-arceus-lite/releases/download/v2.0.0/Nokia4.apk" class="download-btn" id="download-4">
                     <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                     Download
                 </a>
@@ -467,14 +496,14 @@
                 <div class="apk-info">
                     <div class="apk-icon">📦</div>
                     <div class="apk-details">
-                        <div class="apk-name">Noka Arceus Lite [FREE] 5</div>
+                        <div class="apk-name">Nokia5</div>
                         <div class="apk-meta">
                             <span>📄 APK</span>
-                            <span>💾 107.72 MB</span>
+                            <span>💾 107.18 MB</span>
                         </div>
                     </div>
                 </div>
-                <a href="https://github.com/Milkiiy/noka-arceus-lite/releases/download/v1.0.0/Noka.Arceus.Lite.FREE.5.apk" class="download-btn" id="download-5">
+                <a href="https://github.com/Milkiiy/noka-arceus-lite/releases/download/v2.0.0/Nokia5.apk" class="download-btn" id="download-5">
                     <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                     Download
                 </a>
@@ -484,14 +513,36 @@
                 <div class="apk-info">
                     <div class="apk-icon">📦</div>
                     <div class="apk-details">
-                        <div class="apk-name">Noka Arceus Lite [FREE] 6</div>
+                        <div class="apk-name">Nokia6</div>
                         <div class="apk-meta">
                             <span>📄 APK</span>
-                            <span>💾 107.72 MB</span>
+                            <span>💾 107.18 MB</span>
                         </div>
                     </div>
                 </div>
-                <a href="https://github.com/Milkiiy/noka-arceus-lite/releases/download/v1.0.0/Noka.Arceus.Lite.FREE.6.apk" class="download-btn" id="download-6">
+                <a href="https://github.com/Milkiiy/noka-arceus-lite/releases/download/v2.0.0/Nokia6.apk" class="download-btn" id="download-6">
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Download
+                </a>
+            </div>
+        </section>
+
+        <div class="spacer"></div>
+
+        <div class="section-title">🖥️ Termux</div>
+        <section class="apk-list">
+            <div class="apk-card termux">
+                <div class="apk-info">
+                    <div class="apk-icon termux">🖥️</div>
+                    <div class="apk-details">
+                        <div class="apk-name">com.termux_1002</div>
+                        <div class="apk-meta">
+                            <span>📄 APK</span>
+                            <span>💾 108.59 MB</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/Milkiiy/noka-arceus-lite/releases/download/v2.0.0/com.termux_1002%20%281%29.apk" class="download-btn termux" id="download-termux">
                     <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                     Download
                 </a>
